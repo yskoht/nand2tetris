@@ -20,6 +20,21 @@ module Test;
 
     a <= 1; b <= 1;
     #step
+
+    a <= 0; b <= 1'bx;
+    #step
+
+    a <= 1'bx; b <= 0;
+    #step
+
+    a <= 1; b <= 1'bx;
+    #step
+
+    a <= 1'bx; b <= 1;
+    #step
+
+    a <= 1'bx; b <= 1'bx;
+    #step
     $finish;
   end
 
@@ -27,7 +42,7 @@ module Test;
   integer t;
   initial begin
     fd = $fopen("output.txt", "w");
-    for (t = step; t <= step * 5; t += step) begin
+    for (t = step; t <= step * 10; t += step) begin
       #step;
       $fdisplay(fd, "%b %b %b", a, b, out);
     end
