@@ -1,4 +1,5 @@
-src := ../Nand/Nand.v ../Not/Not.v ../Mux/Mux.v ../Mux16/MuxN.v Mux4WayN.v Mux4Way16.v
+include ./src.mk
+src := $(src_Mux4Way16)
 test_bench := Test.v
 
 include ../build.mk

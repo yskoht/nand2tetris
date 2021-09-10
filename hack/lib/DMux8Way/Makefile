@@ -1,4 +1,5 @@
-src := ../Nand/Nand.v ../And/And.v ../Not/Not.v ../DMux/DMux.v ../DMux4Way/DMux4Way.v DMux8Way.v
+include ./src.mk
+src := $(src_DMux8Way)
 test_bench := Test.v
 
 include ../build.mk

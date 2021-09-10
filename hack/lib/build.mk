@@ -1,4 +1,4 @@
-source := $(src) $(test_bench)
+source := $(sort $(src) $(test_bench))
 top_module := $(test_bench:.v=)
 
 .PHONY: build

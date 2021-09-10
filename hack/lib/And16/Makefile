@@ -1,4 +1,5 @@
-src := ../Nand/Nand.v ../Not/Not.v ../And/And.v AndN.v And16.v
+include ./src.mk
+src := $(src_And16)
 test_bench := Test.v
 
 include ../build.mk

@@ -1,4 +1,5 @@
-src := ../Nand/Nand.v ../Not/Not.v ../Mux/Mux.v ../DFF/DFF.v Bit.v
+include ./src.mk
+src := $(src_Bit)
 test_bench := Test.v
 
 include ../build.mk

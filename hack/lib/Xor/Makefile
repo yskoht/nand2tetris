@@ -1,4 +1,5 @@
-src := ../Nand/Nand.v ../Not/Not.v ../And/And.v Xor.v
+include ./src.mk
+src := $(src_Xor)
 test_bench := Test.v
 
 include ../build.mk

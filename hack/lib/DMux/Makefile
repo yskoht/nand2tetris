@@ -1,4 +1,5 @@
-src := ../Nand/Nand.v ../And/And.v ../Not/Not.v DMux.v
+include ./src.mk
+src := $(src_DMux)
 test_bench := Test.v
 
 include ../build.mk

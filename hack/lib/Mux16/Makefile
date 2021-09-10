@@ -1,4 +1,6 @@
-src := ../Nand/Nand.v ../Not/Not.v ../Mux/Mux.v MuxN.v Mux16.v
+
+include ./src.mk
+src := $(src_Mux16)
 test_bench := Test.v
 
 include ../build.mk

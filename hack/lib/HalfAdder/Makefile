@@ -1,4 +1,5 @@
-src := ../Nand/Nand.v ../Not/Not.v ../And/And.v ../Xor/Xor.v HalfAdder.v
+include ./src.mk
+src := $(src_HalfAdder)
 test_bench := Test.v
 
 include ../build.mk
