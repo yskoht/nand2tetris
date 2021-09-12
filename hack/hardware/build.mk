@@ -21,6 +21,9 @@ diff:
 out:
 	cat output.txt
 
+.PHONY: test
+test: build run diff
+
 .PHONY: clean
 clean:
 	rm -rf main dump.vcd output.txt
